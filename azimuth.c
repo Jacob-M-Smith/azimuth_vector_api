@@ -14,3 +14,4 @@ void azimuth_reference_angle_bounds(double* reference_angle)
     
     *reference_angle = angle - (mult * two_pi);
 }
+
