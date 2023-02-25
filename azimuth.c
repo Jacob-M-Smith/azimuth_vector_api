@@ -33,7 +33,14 @@ double azimuth_cartesian(double x, double y, double reference_angle)
     return atan2(x, y) - reference_angle;
 }
 
+// calculates an azimuth from due north for spherical coords
 double azimuth_spherical_from_due_north(double phi)
 {
     return atan2(sin(phi), cos(phi)) + north;
+}
+
+// calculates an azimuth from due north for polar coords
+double azimuth_polar_from_due_north(double theta)
+{
+    return theta + north;
 }
