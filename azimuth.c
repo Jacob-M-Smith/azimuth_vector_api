@@ -15,3 +15,8 @@ void azimuth_reference_angle_bounds(double* reference_angle)
     *reference_angle = angle - (mult * two_pi);
 }
 
+// calculates an azimuth from spherical coordinates
+double azimuth_spherical(double theta, double reference_angle)
+{
+    return atan2(sin(theta), cos(theta)) + reference_angle;
+}
