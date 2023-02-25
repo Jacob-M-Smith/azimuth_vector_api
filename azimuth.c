@@ -20,3 +20,9 @@ double azimuth_spherical(double theta, double reference_angle)
 {
     return atan2(sin(theta), cos(theta)) + reference_angle;
 }
+
+// calculates an azimuth from polar coordinates
+double azimuth_polar(double theta, double reference_angle)
+{
+    return theta + reference_angle;
+}
