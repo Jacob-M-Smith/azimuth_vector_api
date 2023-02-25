@@ -1,4 +1,5 @@
 #define two_pi (2 * M_PI)
+#define north (M_PI / 2)
 
 // calculations for arbitrary reference angles
 double azimuth_spherical(double theta, double reference_angle);             // find the azimuth for a set of spherical coordintates and arbitrary reference angle
