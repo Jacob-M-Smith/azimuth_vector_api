@@ -44,3 +44,9 @@ double azimuth_polar_from_due_north(double theta)
 {
     return theta + north;
 }
+
+// calculates an azimuth from due north for cartesian coords
+double azimuth_cartesian_from_due_north(double x, double y)
+{
+    return atan2(x, y) + north;
+}
