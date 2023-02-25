@@ -6,7 +6,7 @@ double azimuth_polar(double theta, double reference_angle);                 // f
 double azimuth_cartesian(double x, double y, double reference_angle);       // find the azimuth for a set of cartesian coordinates and arbitrary reference angle
 
 // calculations from due north
-double azimuth_spherical_from_due_north(double theta);                      // find the azimuth from due north for a set of spherical coordintates 
+double azimuth_spherical_from_due_north(double phi);                      // find the azimuth from due north for a set of spherical coordintates 
 double azimuth_polar_from_due_north(double theta);                          // find the azimuth from due north for a set of polar coordinates
 double azimuth_cartesian_from_due_north(double x, double y);                // find the azimuth from due north for a set of cartesian coordinates 
 
