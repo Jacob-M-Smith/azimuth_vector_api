@@ -26,3 +26,9 @@ double azimuth_polar(double theta, double reference_angle)
 {
     return theta + reference_angle;
 }
+
+// calculates an azimuth from cartesian coordinates
+double azimuth_cartesian(double x, double y, double reference_angle)
+{
+    return atan2(x, y) - reference_angle;
+}
